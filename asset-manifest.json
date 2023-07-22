@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/coffee-shop/static/css/main.d0f5a1cf.css",
+    "main.js": "/coffee-shop/static/js/main.57b37da7.js",
+    "static/media/best-bg.png": "/coffee-shop/static/media/best-bg.2789623e157473e4342a.png",
+    "static/media/hero-background.png": "/coffee-shop/static/media/hero-background.e7e05c7fbf7fbe942293.png",
+    "static/media/pleasure-bg.png": "/coffee-shop/static/media/pleasure-bg.8dfe65f246ba5525b789.png",
+    "static/media/our-coffee-bg.png": "/coffee-shop/static/media/our-coffee-bg.69b5f4460c8dede57436.png",
+    "static/media/merienda-regular-webfont.woff": "/coffee-shop/static/media/merienda-regular-webfont.03c70bbbb919a67e3f4c.woff",
+    "static/media/merienda-bold-webfont.woff": "/coffee-shop/static/media/merienda-bold-webfont.9cf56bf9dc39293c2c4e.woff",
+    "static/media/merienda-regular-webfont.woff2": "/coffee-shop/static/media/merienda-regular-webfont.799d6fb80168b861b348.woff2",
+    "static/media/merienda-bold-webfont.woff2": "/coffee-shop/static/media/merienda-bold-webfont.5d4064658c255ff0eb16.woff2",
+    "index.html": "/coffee-shop/index.html",
+    "main.d0f5a1cf.css.map": "/coffee-shop/static/css/main.d0f5a1cf.css.map",
+    "main.57b37da7.js.map": "/coffee-shop/static/js/main.57b37da7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0f5a1cf.css",
+    "static/js/main.57b37da7.js"
+  ]
+}
