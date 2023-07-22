@@ -1,0 +1,16 @@
+.not-found {
+  height: 100vh;
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+    height: 100%;
+  }
+  &__img {
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+}

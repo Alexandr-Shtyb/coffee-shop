@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merienda', sans-serif;
+}
+
+input[type=text], input[type=submit], textarea{
+  -webkit-appearance: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus-visible:not(:active), input:focus-visible:not(:active), a:focus-visible:not(:active) {
+  outline: 2px solid #b8860b;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Merienda;
+  font-display: swap;
+  src: url("resources/fonts/merienda-bold-webfont.woff2") format("woff2"), url("resources/fonts/merienda-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Merienda;
+  font-display: swap;
+  src: url("resources/fonts/merienda-regular-webfont.woff2") format("woff2"), url("resources/fonts/merienda-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.active {
+  color: #b8860b !important;
+  cursor: default;
+}
+
+@mixin main-headers {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  line-height: 58px;
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin second-headers {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+@mixin about-cmp-text {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  color: #000;
+}
+
+@mixin labels {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+}
+
+@mixin input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+@mixin btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@import "components/CoffeeBeans/CoffeeBeans";
+@import "components/Nav/Nav";
+@import "components/About/About";
+@import "components/Card/Card";
+@import "components/CardList/CardList";
+@import "components/Footer/Footer";
+@import "pages/Main/Main";
+@import "pages/OurCoffee/OurCoffee";
+@import "pages/Pleasure/Pleasure";
+@import "pages/ProductCard/ProductCard";
+@import "pages/NotFoundPage/NotFoundPage";

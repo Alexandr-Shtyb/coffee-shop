@@ -1,0 +1,42 @@
+.about-cmp {
+  display: flex;
+  justify-content: space-between;
+  .coffee-beans::before {
+    background-color: #000;
+  }
+  .coffee-beans::after {
+    background-color: #000;
+  }
+  .coffee-beans {
+    margin-bottom: 25px;
+  }
+  .left {
+    margin-right: 80px;
+  }
+  &__right {
+    padding-top: 20px;
+    h2 {
+      @include second-headers;
+    }
+    p {
+      @include about-cmp-text;
+    }
+    p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 845px) {
+    align-items: center;
+  }
+}
+
+.about-cmp-block {
+  margin-bottom: 60px;
+}
+
+.separator {
+  margin: 0 auto;
+  width: 240px;
+  height: 1px;
+  margin-bottom: 60px;
+}

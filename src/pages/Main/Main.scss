@@ -1,0 +1,234 @@
+.nav {
+  margin-bottom: 115px;
+  &__container {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    li {
+      a {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        color: #fff;
+      }
+    }
+    li:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  @media (max-width: 1350px) {
+    &__container {
+      max-width: 990px;
+    }
+  }
+
+  @media (max-width: 1120px) {
+    &__container {
+      max-width: 790px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-list {
+      display: none;
+      li:not(:last-child) {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.burger-btn {
+  display: none;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  span {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    left: 5px;
+  }
+  span:nth-child(1) {
+    transform: translateY(-10px);
+  }
+  span:nth-child(3) {
+    transform: translateY(10px);
+  }
+
+  @media (max-width: 1120px) {
+    display: block;
+  }
+}
+
+.app {
+  background: url("../../../public/img/hero-background.png") no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 200px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  &__container {
+    max-width: 1140px;
+    width: 100%;
+  }
+  h1 {
+    @include main-headers;
+    margin-bottom: 20px;
+  }
+  &__descr {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  &__more-link {
+    display: inline-block;
+    button {
+      @include btn-reset;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+      padding: 5px 42px;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      transition: all .2s ease-out;
+    }
+  }
+  &__more-link:hover {
+    button {
+      color: #000;
+      background-color: #fff;
+      transform: scale(1.05);
+    }
+  }
+  &__link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 845px) {
+    h1 {
+      font-size: 30px;
+    }
+    &__descr {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 535px) {
+    h1 {
+      font-size: 25px;
+    }
+    &__descr {
+      font-size: 15px;
+    }
+  }
+}
+
+.about-us {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  &__container {
+    width: 100%;
+    max-width: 590px;
+    padding: 0 30px;
+  }
+}
+
+.about {
+  h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .coffee-beans::before {
+    background-color: #000;
+  }
+  .coffee-beans::after {
+    background-color: #000;
+  }
+  .coffee-beans {
+    margin-bottom: 40px;
+  }
+  p {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 20px;
+     text-align: center;
+   }
+  p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 535px) {
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+.best {
+  background: url("../../../public/img/best-bg.png") no-repeat;
+  background-size: cover;
+  &__container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 80px 30px 110px 30px;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+  }
+  .card-list {
+    li:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+  @media (max-width: 855px) {
+    .card-list {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 25px;
+      li:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+  @media (max-width: 535px) {
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+

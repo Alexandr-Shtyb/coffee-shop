@@ -1,0 +1,41 @@
+.footer {
+  &__container {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .nav {
+    margin-bottom: 30px;
+    .nav__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+    }
+    .nav-list {
+      a {
+        transition: margin-bottom .2s ease-out;
+        &:hover {
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
+    .nav-list__item a {
+      color: #000;
+    }
+  }
+  .coffee-beans::before {
+    background-color: #000;
+  }
+  .coffee-beans::after {
+    background-color: #000;
+  }
+  .coffee-beans {
+    margin-bottom: 0;
+  }
+  @media (max-width: 1120px) {
+    .nav {
+      display: none;
+    }
+  }
+}
