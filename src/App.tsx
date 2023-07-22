@@ -11,12 +11,12 @@ import {NotFoundPage} from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
   const data = [
-    <Card id={1} src="img/best-good-1.jpg" name="Solimo Coffee Beans 2 kg" country="Brazil" price="10.73$" />,
-    <Card id={2} src="img/best-good-2.jpg" name="Presto Coffee Beans 1 kg" country="Columbia" price="15.20$" />,
-    <Card id={3} src="img/best-good-3.jpg" name="AROMISTICO Coffee 1 kg" country="Kenya" price="10.99$" />,
-    <Card id={4} src="img/best-good-3.jpg" name="Americano Coffee 1 kg" country="Brazil" price="8.85$"/>,
-    <Card id={5} src="img/best-good-3.jpg" name="AROMISTICO Coffee 1 kg" country="Columbia" price="11.55$"/>,
-    <Card id={6} src="img/best-good-3.jpg" name="Americano Coffee 1 kg" country="Brazil" price="6.99$"/>
+    <Card id={1} src={process.env.PUBLIC_URL + "/img/best-good-1.jpg"} name="Solimo Coffee Beans 2 kg" country="Brazil" price="10.73$" />,
+    <Card id={2} src={process.env.PUBLIC_URL + "/img/best-good-2.jpg"} name="Presto Coffee Beans 1 kg" country="Columbia" price="15.20$" />,
+    <Card id={3} src={process.env.PUBLIC_URL + "/img/best-good-3.jpg"} name="AROMISTICO Coffee 1 kg" country="Kenya" price="10.99$" />,
+    <Card id={4} src={process.env.PUBLIC_URL + "/img/best-good-3.jpg"} name="Americano Coffee 1 kg" country="Brazil" price="8.85$"/>,
+    <Card id={5} src={process.env.PUBLIC_URL + "/img/best-good-3.jpg"} name="AROMISTICO Coffee 1 kg" country="Columbia" price="11.55$"/>,
+    <Card id={6} src={process.env.PUBLIC_URL + "/img/best-good-3.jpg"} name="Americano Coffee 1 kg" country="Brazil" price="6.99$"/>
   ];
 
   return (

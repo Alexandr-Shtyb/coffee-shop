@@ -39,7 +39,7 @@ const ProductCard: FC<IProductCard> = ({data}) => {
                 Back
               </button>
               <About
-                src="/img/product-card-img.jpg"
+                src={process.env.PUBLIC_URL + "/img/product-card-img.jpg"}
                 header="About it"
                 text={
                   <>

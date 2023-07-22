@@ -20,7 +20,7 @@ const Pleasure: React.FC<IPleasure> = ({data}) => {
       <main>
         <section className="our-coffee">
           <div className="container our-coffee__container">
-            <About src="img/pleasure-about.jpg"
+            <About src={process.env.PUBLIC_URL + "/img/pleasure-about.jpg"}
                    header="About our goods"
                    text=
                      {

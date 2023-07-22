@@ -11,7 +11,7 @@ const NotFoundPage: React.FC = () => {
           <span>❮</span>
           Back
         </button>
-        <img className="not-found__img" src="/img/404.svg" alt="error" />
+        <img className="not-found__img" src={process.env.PUBLIC_URL + "/img/404.svg"} alt="error" />
       </div>
     </div>
   );
