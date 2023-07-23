@@ -76,7 +76,7 @@ const OurCoffee: React.FC<IOurCoffee> = ({data}) => {
       <main>
         <section className="our-coffee">
           <div className="container our-coffee__container">
-            <About src={process.env.PUBLIC_URL + "/img/our-coffee-about.jpg"}
+            <About src="/coffee-shop/img/our-coffee-about.jpg"
                    header="About our beans"
                    text=
                       {
